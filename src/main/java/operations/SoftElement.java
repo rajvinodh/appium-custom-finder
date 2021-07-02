@@ -1,7 +1,11 @@
+package operations;
+
+import operations.BaseElement;
+
 public class SoftElement implements BaseElement {
 
-    SoftElement() {
-        System.err.println("WARNING : SoftElement instance is created, which indicates potential Bug.");
+    public SoftElement() {
+        System.err.println("WARNING : operations.SoftElement instance is created, which indicates potential Bug.");
     }
 
     @Override

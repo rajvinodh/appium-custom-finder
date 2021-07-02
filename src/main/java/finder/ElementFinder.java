@@ -1,12 +1,15 @@
-import com.sun.xml.internal.rngom.parse.host.Base;
+package finder;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
+import operations.BaseElement;
+import operations.HardElement;
+import operations.SoftElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebElement;
 
 public class ElementFinder {
     AndroidDriver androidDriver;
@@ -16,14 +19,14 @@ public class ElementFinder {
     ElementFindStrategy strategy;
     DriverType driverType;
 
-    ElementFinder(AppiumDriver driver, String locator, ElementFindStrategy strategy) {
+    public ElementFinder(AppiumDriver driver, String locator, ElementFindStrategy strategy) {
         setPlatform(driver);
         mobileBy = findAppropriateBy(locator);
         this.locator = locator;
         this.strategy = strategy;
-     }
+    }
 
-    ElementFinder(AppiumDriver driver, By mobileBy, ElementFindStrategy strategy) {
+    public ElementFinder(AppiumDriver driver, By mobileBy, ElementFindStrategy strategy) {
         setPlatform(driver);
         this.mobileBy = mobileBy;
         this.strategy = strategy;
