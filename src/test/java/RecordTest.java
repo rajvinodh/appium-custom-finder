@@ -32,7 +32,7 @@ public class RecordTest extends BaseTest {
         System.out.println(String.format("Display size: %s" , realDisplaySize));
 
         HardElement announcementElement = (HardElement) new ElementFinder(appiumDriver, announcementsElement, ElementFindStrategy.HARD).load();
-//        String path = elementScreenshot.take(announcementElement.getElement(), fileName, folderName);
+        String path = elementScreenshot.take(announcementElement.getElement(), fileName, folderName);
 
         MobileElement element = (MobileElement) appiumDriver.findElementByImage(new ImageConverter().getReferenceImageB64(fullPath));
         element.click();
