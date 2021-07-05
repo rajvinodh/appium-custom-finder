@@ -1,0 +1,16 @@
+{
+  "element_name" : "continue_button",
+  "screen_name" : "login",
+  "strategy" : "DEFAULT",
+  "image_recordings" : [ {
+    "device_name" : "mi a1",
+    "os_version" : "9",
+    "screen_resolution" : "1020*235",
+    "image_url" : "/path/login/continue_button.jpg"
+  }, {
+    "device_name" : "redmi 9",
+    "os_version" : "8",
+    "screen_resolution" : "1020*235",
+    "image_url" : "/path/login/continue_button.jpg"
+  } ]
+}
