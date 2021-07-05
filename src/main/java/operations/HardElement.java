@@ -1,10 +1,13 @@
+package operations;
+
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSElement;
+import operations.BaseElement;
 
 public class HardElement implements BaseElement {
     MobileElement element;
 
-    HardElement(MobileElement element) {
+    public HardElement(MobileElement element) {
         this.element = element;
     }
 
@@ -50,5 +53,9 @@ public class HardElement implements BaseElement {
     @Override
     public String getText() {
         return element.getText();
+    }
+
+    public MobileElement getElement() {
+        return element;
     }
 }
